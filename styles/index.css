@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #d2d7d3;
+    --blue: #007bff;
+    --orange: #ff7f00;
+    --yellow: #ffff00;
+    --font: "Outfit", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+    animation: animate-fade 1s ease-in-out 0.7s backwards;
+}
+
+@keyframes animate-fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Navbar */
+.navbar {
+    border-bottom: 2px solid var(--gray);
+}
+
+.navbar-brand {
+    font-family: var(--font);
+    font-weight: 900;
+    font-style: normal;
+    padding-left: 10px;
+}
+
+.form-control {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 60px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    width: 100%;
+    max-width: 120px;
+    border-radius: 60px;
+    color: var(--white);
+    background-color: var(--black);
+}
+
+/* Main Section */
+main {
+    object-fit: contain;
+}
+
+/* Section 1 (Head Section) */
+#head {
+    display: flex;
+    flex-wrap: nowrap; 
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px; /* Reduced padding */
+    gap: 10px; /* Reduced gap between text and image */
+    width: 100%; /* Allow the section to take up the full width */
+    max-width: 1200px; /* Increase max-width to make the section wider */
+    margin: 0 auto; /* Center the section horizontally */
+}
+.sec-1{
+    border-bottom: 2px solid var(--gray);
+}
+
+.headtxt {
+    flex: 1;
+    padding: 10px;
+    padding-left: 10px;
+}
+
+.headtxt h1 {
+    font-size: 900; 
+    margin-bottom: 10px;
+}
+
+.headtxt h5{
+    font-weight: 400; 
+}
+
+.headimg {
+    flex: 1;
+}
+
+.headimg img {
+    max-width: 100%;
+    max-height: 60%;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+
+
+/* Section-2 (Categories Section) */
+.sec-2 {
+    border-bottom: 2px solid var(--gray);
+}
+
+.categories {
+    padding: 25px;
+}
+
+.categories h2 {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.category-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 8%;
+    gap: 10px;
+}
+.category-container .card{
+    height:max-content;
+    width: max-content;
+}
+
+/* Section-3 (Popular Book Section) */
+.sec-3 {
+    border-bottom: 2px solid var(--gray);
+}
+
+.sec-3 h2 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.popular-section {
+    display: flex;
+    padding: 5%;
+    gap: 20px;
+}
+
+.card-body {
+    height: 60px;
+    width: 160px;
+    text-align: center;
+}
+
+/* Media query to stack divs vertically when screen width is less than 600px */
+@media (max-width: 600px) {
+    #head {
+        flex-direction: column;
+    }
+}
