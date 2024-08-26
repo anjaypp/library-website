@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">reads.io</a>
             <form class="d-flex w-100" role="search">
@@ -39,27 +39,39 @@
         <div class="categories">
             <h2><u>Book Categories</u></h2>
             <div class="category-container">
-                <div class="card">
+                <a href="/pages/bookdisplay.html">
+                <div class="card" style="width: 18rem;">
+                    <img src="/images/books/the alchemist.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                      Fiction
+                      <p class="card-text">Fiction</p>
                     </div>
-                </div>
-                <div class="card">
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="card" style="width: 18rem;">
+                    <img src="/images/books/atomic habits.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                      Non-Fiction
+                      <p class="card-text">Non-Fiction</p>
                     </div>
-                </div>
-                <div class="card">
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="card" style="width: 18rem;">
+                    <img src="/images/books/itendswithus.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                      Romance
+                      <p class="card-text">Romance</p>
                     </div>
-                </div>
-                <div class="card">
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="card animate pop delay-3" style="width: 18rem;">
+                    <img src="/images/books/1984.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                      Classic
+                      <p class="card-text">Classic</p>
                     </div>
-                </div>
-            </div>
+                  </div>
+                </a>
+
         </div>
     </section>
 
@@ -67,42 +79,62 @@
     <section class="sec-3">
         <h2><u>Popular Books</u></h2>
         <div class="popular-section">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="/images/temp.img" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">Book-1</p>
+            <!-- The Alchemist -->
+            <a href="/pages/books/The Alchemist.html">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="/images/books/the alchemist.png" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">The Alchemist</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="/images/temp.img" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">Book-2</p>
+            </a>
+    
+            <!-- Circe -->
+            <a href="/pages/books/Circa.html">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="/images/books/circe.png" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Circe</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="/images/temp.img" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">Book-3</p>
+            </a>
+    
+            <!-- Half of a Yellow Sun -->
+            <a href="/pages/books/Half of the Yellow Sun.html">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="/images/books/half of a yellow sun.png" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Half of a Yellow Sun</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="/images/temp.img" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">Book-4</p>
+            </a>
+    
+            <!-- The Song of Achilles -->
+            <a href="/pages/books/The Song of Achilles.html">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="/images/books/songofachilles.png" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">The Song of Achilles</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="/images/temp.img" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">Book-5</p>
+            </a>
+    
+            <!-- Greenlights -->
+            <a href="/pages/books/Greenlights.html">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="/images/books/greenlights.png" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Greenlights</p>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
     </section>
+    
 
     <!-- Footer -->
-    <footer class="bg-body-tertiary text-center text-lg-start">
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+    <footer class="footer text-center text-lg-start">
+        <div class="text-center p-3" style="background-color: #c1c8cb;;">
           © 2024 Copyright:
           <a class="text-body" href="#">Made by Anjay P.P</a>
         </div>

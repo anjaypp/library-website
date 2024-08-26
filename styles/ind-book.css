@@ -1,0 +1,93 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body {
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: rgba(0, 0, 0, 0.05); /* Fixed background color syntax */
+    border-bottom: 2px solid black;
+}
+.navbar-brand {
+    font-weight: 900;
+}
+
+#book-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    margin: 40px;
+}
+
+.box {
+    display: flex;
+    width: 80%;
+    background-color: #c1c8cb;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 30px;
+    border-width: 2px 2px 7px 2px;
+    border-color: black;
+    border-style: solid;
+}
+
+.box img {
+    width: 40%;
+    object-fit: cover;
+}
+
+.content {
+    padding: 20px;
+    width: 60%;
+}
+
+.content h2 {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.content h6 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-size: 17px;
+    color: black;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+
+.desc {
+    text-align: justify;
+}
+
+/* Media Query for Screen Width Below 743px */
+@media (max-width: 743px) {
+    .box {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .box img {
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #book-container {
+        height: auto;
+    }
+}
