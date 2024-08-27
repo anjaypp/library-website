@@ -23,40 +23,16 @@ body {
     100% { opacity: 1; }
 }
 
-/* Navbar */
 .navbar {
-    background-color: rgba(0, 0, 0, 0.05); /* Fixed background color syntax */
+    background-color: rgba(0, 0, 0, 0.05);
     border-bottom: 2px solid black;
 }
 
 .navbar-brand {
     font-family: var(--font);
     font-weight: 900;
-    font-style: normal;
     padding-left: 10px;
 }
-
-.form-control {
-    width: 100%;
-    max-width: 500px;
-    border-radius: 60px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.btn {
-    width: 100%;
-    max-width: 120px;
-    border-radius: 60px;
-    color: var(--white);
-    background-color: var(--black);
-}
-
-/* Main Section */
-main {
-    object-fit: contain;
-}
-
-/* Section 1 (Head Section) */
 #head {
     display: flex;
     flex-wrap: nowrap; 
@@ -101,118 +77,91 @@ main {
 }
 
 
-/* Section-2 (Categories Section) */
-.sec-2 {
+.form-control {
+    max-width: 500px;
+    border-radius: 60px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    max-width: 120px;
+    border-radius: 60px;
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.sec-1 {
     border-bottom: 2px solid var(--gray);
 }
 
-.categories {
+#head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 10px;
+    max-width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.headtxt {
+    padding: 10px;
+    padding-left: 10px;
+}
+
+.headimg img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Category Section */
+.sec-2 {
+    border-bottom: 2px solid var(--gray);
     padding: 25px;
 }
 
-.categories h2 {
-    text-align: center;
-    padding-bottom: 15px;
-}
-
-.category-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap; 
-    gap: 10px; 
-    margin-top: 25px;
-}
-  
-.animate {
-    animation-duration: 0.5s;
-    animation-name: animate-fade;
-    animation-delay: 0.5s;
-    animation-fill-mode: backwards;
-}
-      
-@keyframes animate-fade {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-      
-/* Section-3 (Popular Book Section) */
 .sec-3 {
     border-bottom: 2px solid var(--gray);
-    text-align: center;
-}
-
-.sec-3 h2 {
     text-align: center;
     margin-top: 30px;
 }
 
-.popular-section {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 35px;
-    margin-bottom: 35px;
-    gap: 20px; 
-}
-
-/* Hover effect for cards */
-.popular-section .card, .category-container .card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling and shadow */
-}
-
-.popular-section .card:hover, .category-container .card:hover {
-    transform: scale(1.05); 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
-}
-
-.popular-section .card:hover .card-img-top, .category-container .card:hover .card-img-top {
-    filter: brightness(0.8); 
-}
-
-/* Consistent styling for cards */
 .card {
-    width: 18rem; /* Fixed width for cards */
-    box-sizing: border-box; /* Ensures padding and borders are included in the width */
-    margin-bottom: 20px; /* Spacing between cards */
-    border-width: 2px 2px 6px 2px; /* top right bottom left */
+    border-width: 2px 2px 6px 2px;
     border-style: solid;
     border-color: black;
-    height: 100%; /* Ensures all cards have the same height */
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
-/* Ensure card images fill the card properly */
-.card img {
-    width: 100%;
-    height: auto; 
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-/* Adjust padding for card body to maintain alignment */
 .card-body {
     padding: 10px;
     text-align: center;
 }
 
-/* Ensure text does not overflow in card body */
 .card-body p {
-    white-space: nowrap; 
+    white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis; 
+    text-overflow: ellipsis;
 }
 
 .footer {
     border-top: 2px solid black;
 }
 
-/* Media query to stack divs vertically when screen width is less than 600px */
 @media (max-width: 600px) {
     #head {
         flex-direction: column;
     }
     .headimg, .headtxt {
         width: 100%;
-        max-height: auto;
     }
 }
-
